@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  height: 90px;
+  /* ヘッダーを固定 */
+  position: fixed;
+  top: 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  list-style: none;
+}
+
+
+header nav ul li a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 90px;
+  padding: 0 16px;
+}
+
+header nav ul li a:hover {
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.top-image {
+  height: 800px;
+  background-image: url(../img/top-image.jpeg);
+  background-size: cover;
+  background-position: center;
+  /* ヘッダーの高さ分余白をとる */
+  margin-top: 90px;
+}
+
+/* ジャンプ先に位置調整のクラスを作成 */
+.anchor {
+  padding-top: 120px;
+  margin-top: -120px;
+}
+
+.top-image p {
+  font-size: 64px;
+  line-height: 2;
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  height: 300px;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.philosophy {
+  background-color: darksalmon;
+}
+
+.service {
+  background-color: goldenrod;
+}
+
+.contact {
+  background-color: mediumturquoise;
+  margin-bottom: 2000px;
+}
+
+/* ------------------------------------ */
+/* ▼スマホ用デザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 768px) {
+
+header {
+  height: 40px;
+}
+
+header nav ul li a {
+  line-height: 40px;
+}
+
+.top-image {
+  margin-top: 40px;
+}
+
+.anchor {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+}
