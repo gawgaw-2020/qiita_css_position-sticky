@@ -33,6 +33,7 @@ header nav ul li a:hover {
 }
 
 .top-image {
+  height: 800px;
   background-image: url(../img/top-image.jpeg);
   background-size: cover;
   background-position: center;
@@ -48,6 +49,7 @@ header nav ul li a:hover {
 section {
   height: 300px;
   text-align: center;
+  padding: 50px 0;
 }
 
 .philosophy {
